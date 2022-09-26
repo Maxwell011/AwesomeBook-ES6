@@ -19,7 +19,6 @@ export default class Store {
     const books = Store.getBooks();
     // books = books.filter((book) => book.title.split(' ') !== title.split(' '));
     const refinedTitle = title.split(' by')[0];
-    console.log(refinedTitle, 'refined');
     books.forEach((book, i) => {
       if (book.title === refinedTitle) {
         books.splice(i, 1);
