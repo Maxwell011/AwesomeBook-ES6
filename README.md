@@ -1,14 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My Portofolio Project
+# Awesome-books
 
-> This is a basic web project that allows users to add and Remove books from a list.
+Awesome books using HTML, CSS, and JavaScripts is a book app to list, store and delete books.
 
 ## Built With
 
-- Html
-- Javascript
-- Git and Github
+- HTML
+- CSS
+- JAVASCRIPT
 
 ## Live Demo (if available)
 
@@ -16,21 +16,13 @@
 
 ## Getting Started
 
-\*\* this project runs on any browser
+To get a local copy up and running:
 
-To get a local copy up and running follow these simple example steps.
+1. Clone this repository or download the Zip folder:
 
-### Prerequisites
+**`https://github.com/Maxwell011/AwesomeBook-ES6.git`**
 
-Any browser
-
-## Authors
-
-👤 **John Mutisya**
-
-- GitHub: [@githubhandle](https://github.com/johnkioko)
-- Twitter: [@twitterhandle](https://twitter.com/@john_the_web_dev)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/johnkioko)
+## Author
 
 👤 **Orji Maxwell**
 
@@ -41,7 +33,7 @@ Any browser
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](../../issues/https://github.com/Maxwell011/AwesomeBook-ES6/issues).
 
 ## Show your support
 
