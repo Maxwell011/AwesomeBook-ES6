@@ -1,5 +1,6 @@
 import Store from './modules/store.js';
 import UI from './modules/ui.js';
+import { DateTime } from './modules/luxon.js';
 
 class Book {
   constructor(title, author) {
@@ -36,7 +37,13 @@ document.querySelector('.books').addEventListener('click', (e) => {
 });
 
 const date = document.getElementsByClassName('date')[0];
-date.innerText = ` Date: ${new Date().getDate()} | ${new Date().getMonth()} | ${new Date().getFullYear()}`;
+date.innerText = DateTime.now().toLocaleString({
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+  hour: 'numeric',
+  minute: '2-digit',
+});
 
 const app = {
   pages: [],
