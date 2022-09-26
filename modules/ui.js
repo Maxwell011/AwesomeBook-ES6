@@ -11,7 +11,7 @@ export default class UI {
     const newBook = document.createElement('div');
     newBook.innerHTML = `
       <div class="bookDiv">
-        <p id="title" class="bookTitleAuthor">"${book.title}" by &nbsp; ${book.author}</p>
+        <p id="title" class="bookTitleAuthor">${book.title} by &nbsp; ${book.author}</p>
         <button id="remove" class="delete">Remove</button>
       </div>
     `;

@@ -24,15 +24,14 @@ document.querySelector('.bookForm').addEventListener('submit', (e) => {
     UI.clearFields();
   } else {
     // eslint-disable-next-line no-alert
-    alert('Please enter book tile and author');
+    alert('Please enter book title and author');
   }
 });
 // EVENT DELETE
 document.querySelector('.books').addEventListener('click', (e) => {
   if (e.target.className === 'delete') {
-    const id = e.target.previousElementSibling.innerText;
-    Store.removeBook(id);
     UI.deleteBook(e.target);
+    Store.removeBook(e.target.previousElementSibling.textContent);
   }
 });
 

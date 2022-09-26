@@ -15,10 +15,16 @@ export default class Store {
     localStorage.setItem('books', JSON.stringify(books));
   }
 
-  static removeBook(id) {
-    let books = Store.getBooks();
-    id = parseInt(id, 10);
-    books = books.filter((book) => book.id !== id);
+  static removeBook(title) {
+    const books = Store.getBooks();
+    // books = books.filter((book) => book.title.split(' ') !== title.split(' '));
+    const refinedTitle = title.split(' by')[0];
+    console.log(refinedTitle, 'refined');
+    books.forEach((book, i) => {
+      if (book.title === refinedTitle) {
+        books.splice(i, 1);
+      }
+    });
     localStorage.setItem('books', JSON.stringify(books));
   }
 }
